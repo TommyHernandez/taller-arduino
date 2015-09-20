@@ -1,0 +1,12 @@
+/*
+* CSS Estra pra la presencation y no incluido en reveal
+*/
+
+.flotante {
+    width: 50%;
+    float: left;
+}
+
+table {
+    font-size: 0.8em;
+}

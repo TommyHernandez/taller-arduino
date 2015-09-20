@@ -19,16 +19,7 @@
 
     <!-- Code syntax highlighting -->
     <link rel="stylesheet" href="lib/css/zenburn.css">
-
-    <!-- Printing and PDF exports -->
-    <script>
-        var link = document.createElement('link');
-        link.rel = 'stylesheet';
-        link.type = 'text/css';
-        link.href = window.location.search.match(/print-pdf/gi) ? 'css/print/pdf.css' : 'css/print/paper.css';
-        document.getElementsByTagName('head')[0].appendChild(link);
-    </script>
-
+    <link rel="stylesheet" href="css/custom.css" type="text/css">
     <!--[if lt IE 9]>
 		<script src="lib/js/html5shiv.js"></script>
 		<![endif]-->
@@ -166,11 +157,297 @@
                         </li>
                     </ul>
                 </section>
-                <section id="pro"></section>
-                <section id="mega"></section>
-                <section id="zero"></section>
-                <section id="due"></section>
-                <section id="yun"></section>
+                <section id="pro">
+                    <h2>Arduino Pro</h2>
+                    <div>
+                        <img src="images/ArduinoPro.jpg" alt="Arduino pro" />
+                    </div>
+                    <div>
+                        <table>
+                            <tr>
+                                <td>Microcontrolador</td>
+                                <td>ATmega168 o ATmega328</td>
+                            </tr>
+                            <tr>
+                                <td>Voltaje operativo</td>
+                                <td>3.3V o 5V</td>
+                            </tr>
+                            <tr>
+                                <td>Input voltage</td>
+                                <td>3.35 -12 V o 5 - 12V</td>
+                            </tr>
+                            <tr>
+                                <td>E/S Digitales</td>
+                                <td>14 (de las cuales 6 son salidas PWM)</td>
+                            </tr>
+                            <tr>
+                                <td>Entradas analógicas</td>
+                                <td>6</td>
+                            </tr>
+                            <tr>
+                                <td>Memoria Flash</td>
+                                <td>16 KB (ATmega168) o 32KB (ATmega328) 2KB para el bootloader</td>
+                            </tr>
+                            <tr>
+                                <td>SRAM</td>
+                                <td>1 KB (ATmega168) o 2 KB (ATmega328)</td>
+                            </tr>
+                            <tr>
+                                <td>EEPROM</td>
+                                <td>512 bytes (ATmega168) o 1 KB (ATmega328)</td>
+                            </tr>
+                            <tr>
+                                <td>Velocidad del Reloj</td>
+                                <td>8MHz en 3.3V o 16MHz en 5V</td>
+                            </tr>
+                        </table>
+                    </div>
+
+                </section>
+                <section id="mega">
+                    <h2>Arduino Mega</h2>
+                    <div class="flotante">
+                        <img src="images/arduinoMega.jpg" alt="Arduino Mega" />
+                    </div>
+                    <div class="flotante">
+                        <table>
+                            <tr>
+                                <td>Microcontrolador</td>
+                                <td>ATmega2560</td>
+                            </tr>
+                            <tr>
+                                <td>Voltaje operativo</td>
+                                <td>5V</td>
+                            </tr>
+                            <tr>
+                                <td>Input voltage</td>
+                                <td>7-12v recomendado pero admite entre 6v a 20v</td>
+                            </tr>
+                            <tr>
+                                <td>E/S Digitales</td>
+                                <td>54 (de las cuales 15 son salidas PWM)</td>
+                            </tr>
+                            <tr>
+                                <td>Entradas analógicas</td>
+                                <td>16</td>
+                            </tr>
+                            <tr>
+                                <td>Memoria Flash</td>
+                                <td>256KB 8KB para el bootloader</td>
+                            </tr>
+                            <tr>
+                                <td>SRAM</td>
+                                <td>8KB</td>
+                            </tr>
+                            <tr>
+                                <td>EEPROM</td>
+                                <td>4KB</td>
+                            </tr>
+                            <tr>
+                                <td>Velocidad del Reloj</td>
+                                <td>16MHz</td>
+                            </tr>
+                        </table>
+                    </div>
+                </section>
+                <section id="zero">
+                    <h2>Arduino Zero</h2>
+                    <div>
+                        <img src="images/ArdZEROfeatured.jpg" alt="Arduino Zero" />
+                    </div>
+                    <div>
+                        <table>
+                            <tr>
+                                <td>Microcontrolador</td>
+                                <td>ATSAMD21G18, 32-Bit ARM Cortex M0+</td>
+                            </tr>
+                            <tr>
+                                <td>Voltaje operativo</td>
+                                <td>3.3V</td>
+                            </tr>
+                            <tr>
+                                <td>E/S Digitales</td>
+                                <td>20</td>
+                            </tr>
+                            <tr>
+                                <td>Entradas analógicas</td>
+                                <td>6, 12-bit ADC</td>
+                            </tr>
+                            <tr>
+                                <td>Memoria Flash</td>
+                                <td>256KB</td>
+                            </tr>
+                            <tr>
+                                <td>SRAM</td>
+                                <td>32KB</td>
+                            </tr>
+                            <tr>
+                                <td>EEPROM</td>
+                                <td>No posee</td>
+                            </tr>
+                            <tr>
+                                <td>Velocidad del Reloj</td>
+                                <td>48MHz</td>
+                            </tr>
+                        </table>
+                    </div>
+                </section>
+                <section id="due">
+                    <h2>Arduino Due</h2>
+                    <div>
+                        <img src="images/arduinoDue.jpg" alt="Arduino due" />
+                    </div>
+                    <div>
+                        <table>
+                            <tr>
+                                <td>Microcontrolador</td>
+                                <td>AT91SAM3X8E</td>
+                            </tr>
+                            <tr>
+                                <td>Voltaje operativo</td>
+                                <td>3.3V</td>
+                            </tr>
+                            <tr>
+                                <td>Voltage de entrada </td>
+                                <td>7-12v recomendado pero admite entre 6v a 16v</td>
+                            </tr>
+                            <tr>
+                                <td>E/S Digitales</td>
+                                <td>54 (de las cuales 12 son salidas PWM)</td>
+                            </tr>
+                            <tr>
+                                <td>Entradas analógicas</td>
+                                <td>12</td>
+                            </tr>
+                            <tr>
+                                <td>Memoria Flash</td>
+                                <td>512KB</td>
+                            </tr>
+                            <tr>
+                                <td>SRAM</td>
+                                <td>96KB repartidos en dos bacos uno de 64KB y otro de 32KB</td>
+                            </tr>
+                            <tr>
+                                <td>EEPROM</td>
+                                <td>--</td>
+                            </tr>
+                            <tr>
+                                <td>Velocidad del Reloj</td>
+                                <td>84MHz</td>
+                            </tr>
+                        </table>
+                    </div>
+                </section>
+                <section id="yun">
+                    <h2>Arduino Yún</h2>
+                    <div>
+                        <img src="images/arduinoYun.jpg" alt="Arduino yun" />
+                    </div>
+                    <div>
+                        <table>
+                            <tr>
+                                <td>Microcontrolador</td>
+                                <td>ATSAMD21G18, 32-Bit ARM Cortex M0+</td>
+                            </tr>
+                            <tr>
+                                <td>Voltaje operativo</td>
+                                <td>5V</td>
+                            </tr>
+                            <tr>
+                                <td>E/S Digitales</td>
+                                <td>20 7 PWM</td>
+                            </tr>
+                            <tr>
+                                <td>Entradas analógicas</td>
+                                <td>20</td>
+                            </tr>
+                            <tr>
+                                <td>Memoria Flash</td>
+                                <td>32KB 4KB usados por el bootloader</td>
+                            </tr>
+                            <tr>
+                                <td>SRAM</td>
+                                <td>2.5KB</td>
+                            </tr>
+                            <tr>
+                                <td>EEPROM</td>
+                                <td>1KB</td>
+                            </tr>
+                            <tr>
+                                <td>Velocidad del Reloj</td>
+                                <td>16MHz</td>
+                            </tr>
+                        </table>
+                        <section>
+                            <table>
+                                <tbody>
+                                    <tr></tr>
+                                </tbody>
+                                <tbody>
+
+                                    <tr>
+                                        <td>Processor</td>
+                                        <td><a href="https://www.openhacks.com/uploadsproductos/ar9331_datasheet.pdf" target="_blank">Atheros AR9331</a></td>
+                                    </tr>
+
+                                    <tr>
+                                        <td>Architecture</td>
+                                        <td>MIPS @400MHz</td>
+                                    </tr>
+
+                                    <tr>
+                                        <td>Operating Voltage</td>
+                                        <td>3.3V</td>
+                                    </tr>
+                                    <tr>
+                                        <td>Ethernet</td>
+                                        <td>IEEE 802.3 10/100Mbit/s</td>
+                                    </tr>
+
+                                    <tr>
+                                        <td>WiFi</td>
+                                        <td>IEEE 802.11b/g/n</td>
+                                    </tr>
+
+                                    <tr>
+                                        <td>USB Type-A</td>
+                                        <td>2.0 Host</td>
+                                    </tr>
+
+                                    <tr>
+                                        <td>Card Reader</td>
+                                        <td>Micro-SD only</td>
+                                    </tr>
+
+                                    <tr>
+                                        <td>RAM</td>
+                                        <td>64 MB DDR2</td>
+                                    </tr>
+
+                                    <tr>
+                                        <td>Flash Memory</td>
+                                        <td>16 MB</td>
+                                    </tr>
+
+                                    <tr>
+                                        <td>SRAM</td>
+                                        <td>2.5 KB</td>
+                                    </tr>
+
+                                    <tr>
+                                        <td>EEPROM</td>
+                                        <td>1 KB</td>
+                                    </tr>
+
+                                    <tr>
+                                        <td>Clock Speed</td>
+                                        <td>16 MHz</td>
+                                    </tr>
+                                </tbody>
+                            </table>
+                        </section>
+                    </div>
+                </section>
                 <section id="gemma"></section>
                 <section id="lilypad"></section>
                 <section></section>
@@ -185,7 +462,7 @@
     <script>
         // Iniciamos reveal con los parametros basicos
         Reveal.initialize({
-            width: 960,
+            width: 1000,
             height: 900,
             controls: true,
             progress: true,
