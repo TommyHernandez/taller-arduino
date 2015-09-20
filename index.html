@@ -1,0 +1,199 @@
+<!doctype html>
+<html lang="es">
+
+<head>
+    <meta charset="utf-8">
+
+    <title>Introduccion a Arduino</title>
+
+    <meta name="description" content="l Taller Arduino Básico realizado por ABUG">
+    <meta name="author" content="Pedro Tomas Hernandez y Carlos Martín">
+
+    <meta name="apple-mobile-web-app-capable" content="yes" />
+    <meta name="apple-mobile-web-app-status-bar-style" content="black-translucent" />
+
+    <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=no, minimal-ui">
+
+    <link rel="stylesheet" href="css/reveal.css">
+    <link rel="stylesheet" href="css/theme/sky.css" id="theme">
+
+    <!-- Code syntax highlighting -->
+    <link rel="stylesheet" href="lib/css/zenburn.css">
+
+    <!-- Printing and PDF exports -->
+    <script>
+        var link = document.createElement('link');
+        link.rel = 'stylesheet';
+        link.type = 'text/css';
+        link.href = window.location.search.match(/print-pdf/gi) ? 'css/print/pdf.css' : 'css/print/paper.css';
+        document.getElementsByTagName('head')[0].appendChild(link);
+    </script>
+
+    <!--[if lt IE 9]>
+		<script src="lib/js/html5shiv.js"></script>
+		<![endif]-->
+</head>
+
+<body>
+    <div class="reveal">
+
+        <!-- Any section element inside of this container is displayed as a slide -->
+        <div class="slides">
+            <section>
+                <h2>Arduino: Que es y como empezar a usarlo</h2>
+                <h3>Asociación Alpha-Bug</h3>
+                <p>
+                    <small>Creada por <a href="http://abug.es">Alpha-Bug</a> / <a href="http://twitter.com/pedrothdc">@pedrothdc</a></small>
+                </p>
+            </section>
+            <section>
+                <h2>Indice</h2>
+                <ul>
+                    <li><a href="#quienes">Quienes Somos</a></li>
+                    <li><a href="#openh">Open Hardware y Open Source</a> </li>
+                    <li><a href="#quees">¿Que es Arduino?</a></li>
+                    <li><a href="#ardu_part">Partes del Arduino Uno</a> </li>
+                    <li><a href="#model">Modelos de arduino</a> </li>
+                    <!-- Aqui lo suyo es pones varias subsecciones -->
+                    <li><a href="#">Frabicaciones con arduino</a></li>
+                    <!-- mas secciones y la siguiente seria la ultima -->
+                    <li><a href="#conclusion">Conclusión</a></li>
+
+                </ul>
+            </section>
+            <section id="quienes">
+                <h2>Quienes somos</h2>
+                <img src="images/foro.png" alt="logo asociacion alphabug" />
+                <p>Somos la asociación Alpha-Bug, nos fundamos en Enero de 2012 con el fin de hacer llegar la informática y el software libre al mundo en general.</p>
+            </section>
+            <section id="openh">
+                <section>
+                    <h4>Codigo Abierto</h4>
+
+                    <p> Código abierto es la expresión con la que se conoce al software o hardware distribuido y desarrollado libremente. Se focaliza más en los beneficios prácticos que en cuestiones éticas o de libertad que tanto se destacan en el software libre.</p>
+                </section>
+                <section>
+                    <h4>Open Hardware</h4>
+                    <p>Son aquellos dispositivos de hardware cuyas especificaciones y diagramas esquemáticos son de acceso público, ya sea bajo algún tipo de pago, o de forma gratuita</p>
+                </section>
+            </section>
+            <section id="quees">
+                <section>
+                    <h4>¿Que es Arduino?</h4>
+                    <p>Arduino es una placa con un microcontrolador y un entorno de desarrollo cuyo objetivo es facilitar el desarrolo de proyecto electónicos.</p>
+                </section>
+                <section></section>
+
+            </section>
+            <section id="ardu_part">
+                <section>
+                    <img src="images/FCFO0FHI7YLKUS6.LARGE.jpg" alt="Foto Arduino" />
+                </section>
+                <section>
+                    <table>
+                        <tr>
+                            <td>1</td>
+                            <td>USB</td>
+                        </tr>
+                        <tr>
+                            <td>2</td>
+                            <td>Conector Fuente de alimentación</td>
+                        </tr>
+                        <tr>
+                            <td>3</td>
+                            <td>(GND) Toma de tierra</td>
+                        </tr>
+                        <tr>
+                            <td>4</td>
+                            <td>Salida de 5V</td>
+                        </tr>
+                        <tr>
+                            <td>5</td>
+                            <td>Salida de 3.3V</td>
+                        </tr>
+                        <tr>
+                            <td>6</td>
+                            <td>Area de pines analógicos</td>
+                        </tr>
+                        <tr>
+                            <td>7</td>
+                            <td>Area de pines digitales</td>
+                        </tr>
+                        <tr>
+                            <td>8</td>
+                            <td> Pines digitales PWM(modulación por ancho de pulsos)</td>
+                        </tr>
+                        <tr>
+                            <td>9</td>
+                            <td>AREF: Soportes de referencia analógica</td>
+                        </tr>
+                        <tr>
+                            <td>10</td>
+                            <td>Botón de reinicio</td>
+                        </tr>
+                        <tr>
+                            <td>11</td>
+                            <td>Led alimentación</td>
+                        </tr>
+                        <tr>
+                            <td>12</td>
+                            <td>Leds RXTX</td>
+                        </tr>
+                        <tr>
+                            <td>13</td>
+                            <td>Microcontrolador Atmel Atmega 328P</td>
+                        </tr>
+                        <tr>
+                            <td>14</td>
+                            <td>Regulador de Voltaje</td>
+                        </tr>
+                    </table>
+                </section>
+            </section>
+            <section id="model">
+                <section>
+                    <h2>Indice Modelos</h2>
+                    <ul>
+                        <li><a href="pro">Pro</a></li>
+                        <li><a href="mega">Mega</a></li>
+                        <li><a href="zero">Zero</a></li>
+                        <li><a href="due">Due</a></li>
+                        <li><a href="yun">Yún</a></li>
+                        <li><a href="gemma">Gemma</a></li>
+                        <li><a href="lilypad">Lilypad</a></li>
+                        <li>
+                            <a href=""></a>
+                        </li>
+                    </ul>
+                </section>
+                <section id="pro"></section>
+                <section id="mega"></section>
+                <section id="zero"></section>
+                <section id="due"></section>
+                <section id="yun"></section>
+                <section id="gemma"></section>
+                <section id="lilypad"></section>
+                <section></section>
+
+            </section>
+            <section></section>
+            <section></section>
+        </div>
+    </div>
+    <script src="lib/js/head.min.js"></script>
+    <script src="js/reveal.js"></script>
+    <script>
+        // Iniciamos reveal con los parametros basicos
+        Reveal.initialize({
+            width: 960,
+            height: 900,
+            controls: true,
+            progress: true,
+            history: true,
+            center: true,
+            transition: 'concave' // none/fade/slide/convex/concave/zoom
+        });
+    </script>
+</body>
+
+</html>
