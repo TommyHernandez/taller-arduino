@@ -1,9 +1,7 @@
 /**
 * CSS Extra no incluido en REveal.js que nos permite retocar el asperto
-	@author Pedro Hernandez <pedrothdc@pixelariumstudio.es>
+*	@author Pedro Hernandez <pedrothdc@pixelariumstudio.es>
 */
-
-
 
 .flotante {
     width: 50%;
@@ -12,4 +10,12 @@
 
 table {
     font-size: 0.8em;
+}
+
+.reveal h2 {
+    font-size: 3.28em;
+}
+
+.reveal section {
+    font-size: 2.2em;
 }
