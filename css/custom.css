@@ -1,5 +1,5 @@
 /**
-* CSS Extra no incluido en REveal.js que nos permite retocar el asperto
+* CSS Extra no incluido en REveal.js que nos permite retocar el aspecto
 *	@author Pedro Hernandez <pedrothdc@pixelariumstudio.es>
 */
 
@@ -8,7 +8,7 @@
     float: left;
 }
 
-table {
+.reveal section table {
     font-size: 0.8em;
 }
 
@@ -16,6 +16,15 @@ table {
     font-size: 3.28em;
 }
 
+.reveal h4 {
+    font-size: 2.99em;
+}
+
 .reveal section {
-    font-size: 2.2em;
+    font-size: 1.2em;
+}
+
+.reveal section p {
+    font-size: 1.9em;
+    text-align: justify;
 }
